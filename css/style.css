@@ -1,0 +1,81 @@
+.menu{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	margin-left: 50px;
+}
+
+.contain-to-grid.sticky{
+	height: 74px;
+}
+
+.row.background-image{
+
+    max-height: 500px;
+    overflow: hidden;
+    max-width: 100%;
+
+}
+
+#slider{
+
+    background: url("file://localhost/Users/Tony%20Le/MakerSquare/restaurants-project/img/Basilico-private-room.jpg") 0 -312px;
+    height: 500px;
+    background-size: 100%;
+
+}
+
+.top-bar {
+    color: orange;
+}
+
+.blue{
+    background: blue;
+}
+
+.row{
+
+  *max-width: 100%;
+  height: 400px;
+}
+
+ body{]
+    
+    font-family: "Josefin Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #555;
+ }
+
+ h2{
+    font-family: "Josefin Slab"
+ }
+
+ .work li{
+    float: left;
+    box-shadow: inset 0px 0px 0px 5px;
+    -webkit-box-shadow: inset 0px 0px 0px 5px ;
+    list-style-type: none;
+    margin: 0 20px 20px 0;
+ }
+
+ #about, #work, #contact {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 1px solid #ddd;
+ }
+
+ .minnie-me {
+        background:url(../img/avatar-sprite.png);
+        background-position:0px 0px;
+        display:block;
+        margin:0 auto 3em auto;
+        position:relative;
+        left:-10px;
+        width:211px;
+        height:290px;
+        overflow:visible;
+ }
+ .minnie-me:hover{
+        cursor:pointer;
+    }

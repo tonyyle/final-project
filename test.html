@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="css/foundation.css">
+        
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/webfonts/stylesheet.css">
+
+    <script src="js/vendor/modernizr.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(30.29656, -97.70742),
+          zoom: 16,
+          minZoom: 16,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>
+
+
+    <title>PATAKON | Welcome</title>
+
+  </head>
+  <body>
+ <!--   HERO  -->
+    <div class="image">
+      <img src="assets/untitled-2.jpg" alt="" class="header-image">
+      <span><h1 class="name">PATAKON</h1>
+      <h4>Comida Colombiana</h4></span>
+    </div>
+ <!--   HOURS  -->
+    <div class="row">
+      <div class="small-12 columns">
+        <h2>HOURS</h2>
+        <h5>Noon - Midnight Everyday</h5>
+      </div>
+    </div>    
+ <!--   MENU  -->
+    <div class="divider">
+         <img src="assets/divider2.svg" class="decoration small-12 large-centered columns"> 
+    </div>
+    <div class="row">
+      <div class="large-12 columns  menu">
+        <h2>MENU</h2>
+      </div>  
+      <div class="small-12 large-6 columns  menu">
+        <h3>PICADA</h3>
+        <p><em>Assortment of finger foods</em></p>
+        <p>Arepa, empanada, chicarron, chorizo, platano</p>
+      </div>
+      <div class="small-12 large-6 columns menu">
+        <h3>PINCHO de VEGETALES</h3>
+        <p><em>Vegetarian Skewer</em></p>
+        <p>Potatoes, carrots, onions, mushrooms, dates, peppers</p>
+      </div>
+      <div class="small-12 large-centered columns menu">
+        <h3>duo de patacon</h3>
+        <p><em>Fried plantain</em></p>
+        <p>chicken leg confit, hogao, cheese, cilantro <br>
+        <em>-or-</em><br>
+            red fish cebiche, salsa criolla, cilantro</p>
+      </div>
+       <div class="small-12 large-6 columns menu">
+        <h3>bistec a caballo</h3>
+        <p><em>Guacho's breakfast</em></p>
+        <p>Rice, beef, fried egg, chimichurri</p>
+      </div>
+      <div class="small-12 large-6 columns menu">
+        <h3>Caladitos</h3>
+        <p><em>Sweet Plantain</em></p>
+        <p>Potatoes, carrots, onions, <br>mushrooms, dates, peppers</p>
+      </div>
+      </div>
+ <!--   LOCATION  -->
+      <div class="divider">
+         <img src="assets/divider2.svg" class="decoration small-12 large-centered columns"> 
+      </div>
+
+      <div>
+        <h2>LOCATION</h2>
+        <h4>Mueller Trailer Park</h4>
+        <div class="small-12 columns" id="map_canvas"></div>
+      </div>
+    </div>    
+    </body>
+    
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+      $(document).foundation();
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script>
+      jQuery(".name").fitText();
+  </script>
+
+  </body>
+</html>
