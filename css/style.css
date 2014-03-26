@@ -85,6 +85,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     border-top: 1px solid #ddd;
+    padding: 2em 1em 4em 1em;
  }
 
  #work{
@@ -117,7 +118,11 @@
 img {
     margin:2px;
 }
- 
+
+/*.space{
+    padding: 2em 1em 4em 1em;
+}
+*/ 
 .isotope-item {
     z-index: 2;
 }
