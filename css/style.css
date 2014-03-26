@@ -80,7 +80,7 @@
     opacity: 1;
 }*/
 
- #about, #work, #contact {
+ #hero, #about, #work, #contact {
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -119,10 +119,6 @@ img {
     margin:2px;
 }
 
-/*.space{
-    padding: 2em 1em 4em 1em;
-}
-*/ 
 .isotope-item {
     z-index: 2;
 }
