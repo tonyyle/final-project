@@ -1,3 +1,5 @@
+
+
 .menu{
 	position: fixed;
 	top: 0;
@@ -17,11 +19,18 @@
 
 }
 
-#slider{
+.row.hero{
+    background-color: #F5FBEF;
+}
 
-    background: url("file://localhost/Users/Tony%20Le/MakerSquare/restaurants-project/img/Basilico-private-room.jpg") 0 -312px;
-    height: 500px;
-    background-size: 100%;
+.subtitles{
+    font-size: 1.5em;
+}
+
+.name{
+    color: #CF5300;
+    font-weight: 700;
+}
 
 }
 
@@ -29,22 +38,24 @@
     color: orange;
 }
 
-.blue{
-    background: blue;
-}
 
-.row{
+.section{
 
   *max-width: 100%;
   height: 525px;
 }
 
- body{]
+ body{
     
     font-family: "Josefin Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     text-align: center;
     color: #555;
  }
+
+ body p{
+    font-family: "Roboto", sans-serif;
+ }
+
 
  h2{
     font-family: "Josefin Slab"
@@ -58,6 +69,17 @@
     margin: 0 20px 20px 0;
  }
 
+/* .work li img{
+    border-radius: 3px;
+}
+
+.work li img:hover{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+}*/
+
  #about, #work, #contact {
     overflow: hidden;
     overflow-x: hidden;
@@ -65,25 +87,51 @@
     border-top: 1px solid #ddd;
  }
 
- .minnie-me {
-        background:url(../img/avatar-sprite.png);
-        background-position:0px 0px;
-        display:block;
-        margin:0 auto 3em auto;
-        position:relative;
-        left:-10px;
-        width:211px;
-        height:290px;
-        overflow:visible;
+ #work{
+    background-color: #F5FBEF;
  }
- .minnie-me:hover{
-        cursor:pointer;
-        background-position: -1266px 0;
-    }
 
-.minnie-me.one {
-        background-position: -633px 0;
+/*.story{
+    position: relative;
+    float: left;
+}*/
+ 
+.portfolioFilter a { 
+    margin-right: 10px; 
+    color:#666;
+    text-decoration:none;
 }
-.minnie-me.two {
-        background-position: -844px 0;
+ 
+.portfolioFilter a.current { 
+    font-weight:bold;
+}
+ 
+img {
+    margin:2px;
+}
+ 
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+ 
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
 }

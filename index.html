@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/jquery.isotope.js"></script>
   </head>
   <body>
     
@@ -163,6 +164,12 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+
+      $('#porfolio-work').isotope({
+  // options
+  itemSelector : '.item',
+  layoutMode : 'fitRows'
+});
     </script>
   </body>
 </html>
